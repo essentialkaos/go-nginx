@@ -99,7 +99,7 @@ func (s *Server) GetProtocols() []string {
 
 ////////////////////////////////////////////////////////////////////////////////// //
 
-// Get returns property wiht given name (if present)
+// Get returns property with given name (if present)
 func (p Properties) Get(name string) string {
 	if p == nil {
 		return ""
@@ -114,6 +114,7 @@ func (p Properties) Get(name string) string {
 	return ""
 }
 
+// GetBool returns property with given name as bool
 func (p Properties) GetBool(name string) (bool, error) {
 	v := p.Get(name)
 
@@ -124,6 +125,7 @@ func (p Properties) GetBool(name string) (bool, error) {
 	return parseBool(v)
 }
 
+// GetInt returns property with given name as int64
 func (p Properties) GetInt(name string) (int64, error) {
 	v := p.Get(name)
 
@@ -134,6 +136,7 @@ func (p Properties) GetInt(name string) (int64, error) {
 	return parseInt(v)
 }
 
+// GetBuf returns property with given name as buffer
 func (p Properties) GetBuf(name string) (int64, int64, error) {
 	v := p.Get(name)
 
@@ -144,6 +147,7 @@ func (p Properties) GetBuf(name string) (int64, int64, error) {
 	return parseBuffers(v)
 }
 
+// GetSize parses and returns property with given name as size in bytes
 func (p Properties) GetSize(name string) (int64, error) {
 	v := p.Get(name)
 
@@ -154,6 +158,7 @@ func (p Properties) GetSize(name string) (int64, error) {
 	return parseSize(v)
 }
 
+// GetTime parses and returns property with given name as time duration
 func (p Properties) GetTime(name string) (time.Duration, error) {
 	v := p.Get(name)
 
@@ -166,7 +171,7 @@ func (p Properties) GetTime(name string) (time.Duration, error) {
 
 ////////////////////////////////////////////////////////////////////////////////// //
 
-// Get returns property wiht given name (if present)
+// Get returns property with given name (if present)
 func (p *ConditionalProperties) Get(name string) string {
 	if p == nil || p.Data == nil {
 		return ""
@@ -187,6 +192,7 @@ func (p *ConditionalProperties) Get(name string) string {
 	return ""
 }
 
+// GetBool returns property with given name as bool
 func (p *ConditionalProperties) GetBool(name string) (bool, error) {
 	v := p.Get(name)
 
@@ -197,6 +203,7 @@ func (p *ConditionalProperties) GetBool(name string) (bool, error) {
 	return parseBool(v)
 }
 
+// GetInt returns property with given name as int64
 func (p *ConditionalProperties) GetInt(name string) (int64, error) {
 	v := p.Get(name)
 
@@ -207,6 +214,7 @@ func (p *ConditionalProperties) GetInt(name string) (int64, error) {
 	return parseInt(v)
 }
 
+// GetBuf returns property with given name as buffer
 func (p *ConditionalProperties) GetBuf(name string) (int64, int64, error) {
 	v := p.Get(name)
 
@@ -217,6 +225,7 @@ func (p *ConditionalProperties) GetBuf(name string) (int64, int64, error) {
 	return parseBuffers(v)
 }
 
+// GetSize parses and returns property with given name as size in bytes
 func (p *ConditionalProperties) GetSize(name string) (int64, error) {
 	v := p.Get(name)
 
@@ -227,6 +236,7 @@ func (p *ConditionalProperties) GetSize(name string) (int64, error) {
 	return parseSize(v)
 }
 
+// GetTime parses and returns property with given name as time duration
 func (p *ConditionalProperties) GetTime(name string) (time.Duration, error) {
 	v := p.Get(name)
 
