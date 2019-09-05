@@ -19,8 +19,10 @@ import (
 
 // ////////////////////////////////////////////////////////////////////////////////// //
 
+// Properties is map with properties
 type Properties map[string][]string
 
+// Config contains NGINX configuration
 type Config struct {
 	Root string
 	File string
@@ -31,6 +33,7 @@ type Config struct {
 	HTTP   *HTTP
 }
 
+// HTTP contains HTTP part of config
 type HTTP struct {
 	Properties Properties
 	Types      Properties
@@ -38,12 +41,14 @@ type HTTP struct {
 	Upstreams  map[string]*Upstream
 }
 
+// Server contains server part of config
 type Server struct {
 	Properties *ConditionalProperties
 	Locations  []*Location
 	Parent     *HTTP
 }
 
+// Location contains location part of config
 type Location struct {
 	Modifier   string
 	URI        string
@@ -51,16 +56,19 @@ type Location struct {
 	Parent     *Server
 }
 
+// ConditionalProperties contains properties with conditions
 type ConditionalProperties struct {
 	Conditions []string
 	Data       map[string][]ConditionalProperty
 }
 
+// ConditionalProperty contains conditional property data
 type ConditionalProperty struct {
 	ConditionID int
 	Value       string
 }
 
+// Upstream contains info about upstream
 type Upstream struct {
 	Properties Properties
 	Parent     *HTTP
@@ -68,7 +76,7 @@ type Upstream struct {
 
 // ////////////////////////////////////////////////////////////////////////////////// //
 
-// Read read and parse nginx config file
+// Read reads and parses NGINX config file
 func Read(file string) (*Config, error) {
 	filePath, _ := filepath.Abs(file)
 	root := path.Dir(filePath)
