@@ -76,10 +76,13 @@ type Upstream struct {
 
 // ////////////////////////////////////////////////////////////////////////////////// //
 
-// Read reads and parses NGINX config file
-func Read(file string) (*Config, error) {
+// Read reads and parses NGINX configuration file
+func Read(file, root string) (*Config, error) {
 	filePath, _ := filepath.Abs(file)
-	root := path.Dir(filePath)
+
+	if root == "" {
+		root = path.Dir(filePath)
+	}
 
 	data, err := readFile(root, filePath)
 
@@ -99,9 +102,31 @@ func Read(file string) (*Config, error) {
 	return config, nil
 }
 
+// ReadPart reads and parses part of NGINX configuration file
+func ReadPart(file, root string) (*HTTP, error) {
+	filePath, _ := filepath.Abs(file)
+
+	if root == "" {
+		root = path.Dir(filePath)
+	}
+
+	data, err := readFile(root, filePath)
+
+	if err != nil {
+		return nil, err
+	}
+
+	// append close bracket
+	data = append(data, "}")
+
+	_, http, err := parseHTTPBlock(data, 0)
+
+	return http, err
+}
+
 // ////////////////////////////////////////////////////////////////////////////////// //
 
-// readFile reads full config data (with all includes)
+// readFile reads full configuration data (with all includes)
 func readFile(root, file string) ([]string, error) {
 	var filePath = file
 
