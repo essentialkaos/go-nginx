@@ -27,24 +27,46 @@ var _ = Suite(&NginxSuite{})
 // ////////////////////////////////////////////////////////////////////////////////// //
 
 func (s *NginxSuite) TestParsing(c *C) {
-	config, err := Read("testdata/webkaos.conf")
+	config, err := Read("testdata/webkaos.conf", "")
 
 	c.Assert(err, IsNil)
 	c.Assert(config, NotNil)
+
+	server := config.HTTP.FindServer("service.domain.com", "https")
+
+	c.Assert(server, NotNil)
+	c.Assert(server.Properties.Get("ssl_certificate"), Equals, "/etc/webkaos/ssl/my-chain.crt")
+}
+
+func (s *NginxSuite) TestPartParsing(c *C) {
+	http, err := ReadPart("testdata/conf.d/service.conf", "")
+
+	c.Assert(err, IsNil)
+	c.Assert(http, NotNil)
+
+	server := http.FindServer("service.domain.com", "https")
+
+	c.Assert(server, NotNil)
+	c.Assert(server.Properties.Get("ssl_certificate"), Equals, "/etc/webkaos/ssl/my-chain.crt")
 }
 
 func (s *NginxSuite) TestErrors(c *C) {
-	config, err := Read("testdata/unknown.conf")
+	config, err := Read("testdata/unknown.conf", "")
 
 	c.Assert(err, NotNil)
 	c.Assert(config, IsNil)
 
-	config, err = Read("testdata/webkaos-broken.conf")
+	http, err := ReadPart("testdata/unknown.conf", "")
+
+	c.Assert(err, NotNil)
+	c.Assert(http, IsNil)
+
+	config, err = Read("testdata/webkaos-broken.conf", "")
 
 	c.Assert(err, NotNil)
 	c.Assert(config, IsNil)
 
-	config, err = Read("testdata/webkaos-broken2.conf")
+	config, err = Read("testdata/webkaos-broken2.conf", "")
 
 	c.Assert(err, NotNil)
 	c.Assert(config, IsNil)
@@ -155,7 +177,7 @@ func (s *NginxSuite) TestHTTPBlockParser(c *C) {
 // ////////////////////////////////////////////////////////////////////////////////// //
 
 func (s *NginxSuite) TestHelpers(c *C) {
-	config, err := Read("testdata/webkaos.conf")
+	config, err := Read("testdata/webkaos.conf", "")
 
 	c.Assert(err, IsNil)
 	c.Assert(config, NotNil)
