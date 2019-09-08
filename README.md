@@ -1,3 +1,5 @@
+<a href="#readme"><img src="https://gh.kaos.st/beta-alert.svg"/></a>
+
 <p align="center"><a href="#readme"><img src="https://gh.kaos.st/go-nginx.svg"/></a></p>
 
 <p align="center">
@@ -14,8 +16,6 @@
 <br/>
 
 `nginx` is a Go package for reading Nginx configuration files.
-
-**Note, that this is beta software, so it's entirely possible that there will be some significant bugs. Please report bugs so that we are aware of the issues.**
 
 ### Installation
 
