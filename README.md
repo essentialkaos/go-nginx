@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://godoc.org/pkg.re/essentialkaos/nginx.v0"><img src="https://godoc.org/pkg.re/essentialkaos/nginx.v0?status.svg"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/nginx"><img src="https://goreportcard.com/badge/github.com/essentialkaos/nginx"></a>
-  <a href="https://travis-ci.org/essentialkaos/nginx"><img src="https://travis-ci.org/essentialkaos/nginx.svg"></a>
+  <a href="https://travis-ci.com/essentialkaos/nginx"><img src="https://travis-ci.com/essentialkaos/nginx.svg"></a>
   <a href="https://coveralls.io/github/essentialkaos/nginx?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/nginx/badge.svg?branch=master" alt="Coverage Status" /></a>
   <a href="https://codebeat.co/projects/github-com-essentialkaos-nginx-master"><img alt="codebeat badge" src="https://codebeat.co/badges/2cd5874b-a9ce-4b8d-a81d-761c69488f09" /></a>
   <a href="https://essentialkaos.com/ekol"><img src="https://gh.kaos.st/ekol.svg" alt="License" />
@@ -41,8 +41,8 @@ go get -u pkg.re/essentialkaos/nginx.v0
 
 | Branch | Status |
 |--------|--------|
-| `master` | [![Build Status](https://travis-ci.org/essentialkaos/nginx.svg?branch=master)](https://travis-ci.org/essentialkaos/nginx) |
-| `develop` | [![Build Status](https://travis-ci.org/essentialkaos/nginx.svg?branch=develop)](https://travis-ci.org/essentialkaos/nginx) |
+| `master` | [![Build Status](https://travis-ci.com/essentialkaos/nginx.svg?branch=master)](https://travis-ci.com/essentialkaos/nginx) |
+| `develop` | [![Build Status](https://travis-ci.com/essentialkaos/nginx.svg?branch=develop)](https://travis-ci.com/essentialkaos/nginx) |
 
 ### License
 
