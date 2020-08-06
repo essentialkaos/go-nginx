@@ -3,12 +3,12 @@
 <p align="center"><a href="#readme"><img src="https://gh.kaos.st/go-nginx.svg"/></a></p>
 
 <p align="center">
-  <a href="https://godoc.org/pkg.re/essentialkaos/nginx.v0"><img src="https://godoc.org/pkg.re/essentialkaos/nginx.v0?status.svg"></a>
+  <a href="https://pkg.go.dev/github.com/essentialkaos/nginx"><img src="https://pkg.go.dev/badge/github.com/essentialkaos/nginx"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/nginx"><img src="https://goreportcard.com/badge/github.com/essentialkaos/nginx"></a>
   <a href="https://travis-ci.com/essentialkaos/nginx"><img src="https://travis-ci.com/essentialkaos/nginx.svg"></a>
   <a href="https://coveralls.io/github/essentialkaos/nginx?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/nginx/badge.svg?branch=master" alt="Coverage Status" /></a>
   <a href="https://codebeat.co/projects/github-com-essentialkaos-nginx-master"><img alt="codebeat badge" src="https://codebeat.co/badges/2cd5874b-a9ce-4b8d-a81d-761c69488f09" /></a>
-  <a href="https://essentialkaos.com/ekol"><img src="https://gh.kaos.st/ekol.svg" alt="License" />
+  <a href="#license"><img src="https://gh.kaos.st/apache2.svg"></a>
 </p>
 
 <p align="center"><a href="#installation">Installation</a> • <a href="#build-status">Build Status</a> • <a href="#license">License</a></p>
@@ -46,6 +46,6 @@ go get -u pkg.re/essentialkaos/nginx.v0
 
 ### License
 
-[EKOL](https://essentialkaos.com/ekol)
+[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 <p align="center"><a href="https://essentialkaos.com"><img src="https://gh.kaos.st/ekgh.svg"/></a></p>
