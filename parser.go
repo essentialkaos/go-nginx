@@ -3,7 +3,7 @@ package nginx
 
 // ////////////////////////////////////////////////////////////////////////////////// //
 //                                                                                    //
-//                     Copyright (c) 2009-2019 Essential Kaos                         //
+//                         Copyright (c) 2020 ESSENTIAL KAOS                          //
 //      Essential Kaos Open Source License <http://essentialkaos.com/ekol?en>         //
 //                                                                                    //
 // ////////////////////////////////////////////////////////////////////////////////// //
