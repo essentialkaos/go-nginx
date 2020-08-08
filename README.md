@@ -7,7 +7,7 @@
   <a href="https://goreportcard.com/report/github.com/essentialkaos/go-nginx"><img src="https://goreportcard.com/badge/github.com/essentialkaos/go-nginx"></a>
   <a href="https://travis-ci.com/essentialkaos/go-nginx"><img src="https://travis-ci.com/essentialkaos/go-nginx.svg"></a>
   <a href="https://coveralls.io/github/essentialkaos/go-nginx?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/go-nginx/badge.svg?branch=master" alt="Coverage Status" /></a>
-  <a href="https://codebeat.co/projects/github-com-essentialkaos-nginx-master"><img alt="codebeat badge" src="https://codebeat.co/badges/2cd5874b-a9ce-4b8d-a81d-761c69488f09" /></a>
+  <a href="https://codebeat.co/projects/github-com-essentialkaos-go-nginx-master"><img alt="codebeat badge" src="https://codebeat.co/badges/7b8cb5a7-2b9d-426f-8637-4f2bd5644a4d" /></a>
   <a href="#license"><img src="https://gh.kaos.st/apache2.svg"></a>
 </p>
 
