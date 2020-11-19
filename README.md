@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://pkg.go.dev/github.com/essentialkaos/go-nginx"><img src="https://pkg.go.dev/badge/github.com/essentialkaos/go-nginx"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/go-nginx"><img src="https://goreportcard.com/badge/github.com/essentialkaos/go-nginx"></a>
-  <a href="https://travis-ci.com/essentialkaos/go-nginx"><img src="https://travis-ci.com/essentialkaos/go-nginx.svg"></a>
+  <a href="https://github.com/essentialkaos/go-nginx/actions"><img src="https://github.com/essentialkaos/go-nginx/workflows/CI/badge.svg" alt="GitHub Actions Status" /></a>
   <a href="https://coveralls.io/github/essentialkaos/go-nginx?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/go-nginx/badge.svg?branch=master" alt="Coverage Status" /></a>
   <a href="https://codebeat.co/projects/github-com-essentialkaos-go-nginx-master"><img alt="codebeat badge" src="https://codebeat.co/badges/7b8cb5a7-2b9d-426f-8637-4f2bd5644a4d" /></a>
   <a href="#license"><img src="https://gh.kaos.st/apache2.svg"></a>
@@ -41,8 +41,8 @@ go get -u pkg.re/essentialkaos/go-nginx.v0
 
 | Branch | Status |
 |--------|--------|
-| `master` | [![Build Status](https://travis-ci.com/essentialkaos/go-nginx.svg?branch=master)](https://travis-ci.com/essentialkaos/go-nginx) |
-| `develop` | [![Build Status](https://travis-ci.com/essentialkaos/go-nginx.svg?branch=develop)](https://travis-ci.com/essentialkaos/go-nginx) |
+| `master` | [![CI](https://github.com/essentialkaos/go-nginx/workflows/CI/badge.svg?branch=master)](https://github.com/essentialkaos/go-nginx/actions) |
+| `develop` | [![CI](https://github.com/essentialkaos/go-nginx/workflows/CI/badge.svg?branch=develop)](https://github.com/essentialkaos/go-nginx/actions) |
 
 ### License
 
