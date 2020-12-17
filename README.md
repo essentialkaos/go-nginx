@@ -3,7 +3,7 @@
 <p align="center"><a href="#readme"><img src="https://gh.kaos.st/go-nginx.svg"/></a></p>
 
 <p align="center">
-  <a href="https://pkg.go.dev/github.com/essentialkaos/go-nginx"><img src="https://pkg.go.dev/badge/github.com/essentialkaos/go-nginx"></a>
+  <a href="https://pkg.go.dev/pkg.re/essentialkaos/go-nginx.v0"><img src="https://gh.kaos.st/godoc.svg" alt="PkgGoDev"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/go-nginx"><img src="https://goreportcard.com/badge/github.com/essentialkaos/go-nginx"></a>
   <a href="https://github.com/essentialkaos/go-nginx/actions"><img src="https://github.com/essentialkaos/go-nginx/workflows/CI/badge.svg" alt="GitHub Actions Status" /></a>
   <a href="https://coveralls.io/github/essentialkaos/go-nginx?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/go-nginx/badge.svg?branch=master" alt="Coverage Status" /></a>
